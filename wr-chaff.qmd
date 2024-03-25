@@ -18,10 +18,11 @@ execute:
 
 # Introduction
 
-A number of subspecies of the common chaffinch, Fringilla
-coelebs, have been described based principally on the differences in the pattern and colour of the adult male plumage. Two of groups of these
-subspecies are the "coelebs group"  that occurs in Europe
-and Asia and the "canariensis group" that occurs on
+A number of subspecies of the [common chaffinch]( https://en.wikipedia.org/wiki/Common_chaffinch), 
+*Fringilla coelebs*, have been described based principally on 
+the differences in the pattern and colour of the adult male plumage. 
+Two of groups of these subspecies are the "coelebs group" that occurs 
+in Europe and Asia and the "canariensis group" that occurs on
 the Canary Islands. 
 
 
