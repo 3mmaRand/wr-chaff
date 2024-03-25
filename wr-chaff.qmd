@@ -50,6 +50,13 @@ chaff_summary <- chaff |>
 ```
 
 
+
+
+We randomly sampled 20 *F. c. coelebs* males and
+20 *F. c. palmae* males and determined their mass with
+spring scales. Analysis was carried out with R and tidyverse packages.
+
+
 # Results
 
 
