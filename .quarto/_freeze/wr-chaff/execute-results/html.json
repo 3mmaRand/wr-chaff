@@ -1,8 +1,8 @@
 {
-  "hash": "df94164dcee08dae049d543fdec51a56",
+  "hash": "e6e41f83525338960014e476fe041f3f",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"The difference in mass between subspecies of common chaffinch.\"\nauthor: \"Emma Rand\"\nengine: knitr\nformat:\n  html\nexecute:\n  echo: false\n  include: true\n  error: false\n  message: false\n  warning: false\n---\n\n\n\n\n\n\n# Introduction\n\nA number of subspecies of the [common chaffinch]( https://en.wikipedia.org/wiki/Common_chaffinch), \n*Fringilla coelebs*, have been described based principally on \nthe differences in the pattern and colour of the adult male plumage. \nTwo of groups of these subspecies are the \"coelebs group\" that occurs \nin Europe and Asia and the \"canariensis group\" that occurs on\nthe Canary Islands. \n\n\n\n# Methods\n\n::: {.cell}\n\n:::\n\n\n# Results\n\n\n# Discussion\n\n\n# References\n\n,",
+    "markdown": "---\ntitle: \"The difference in mass between subspecies of common chaffinch.\"\nauthor: \"Emma Rand\"\nengine: knitr\nformat:\n  html\nexecute:\n  echo: false\n  include: true\n  error: false\n  message: false\n  warning: false\n---\n\n\n\n\n\n\n# Introduction\n\nA number of subspecies of the [common chaffinch]( https://en.wikipedia.org/wiki/Common_chaffinch), \n*Fringilla coelebs*, have been described based principally on \nthe differences in the pattern and colour of the adult male plumage. \nTwo of groups of these subspecies are the \"coelebs group\" that occurs \nin Europe and Asia and the \"canariensis group\" that occurs on\nthe Canary Islands. \n\n\n\n# Methods\n\n::: {.cell}\n\n:::\n\n::: {.cell}\n\n:::\n\n\n\n\n\n# Results\n\n\n# Discussion\n\n\n# References\n\n,",
     "supporting": [
       "wr-chaff_files"
     ],

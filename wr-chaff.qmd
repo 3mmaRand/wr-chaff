@@ -33,6 +33,15 @@ the Canary Islands.
 library(tidyverse)
 ```
 
+```{r}
+#| label: import-data
+file <- "data-raw/chaff.txt"
+chaff <- read_table(file)
+```
+
+
+
+
 # Results
 
 
