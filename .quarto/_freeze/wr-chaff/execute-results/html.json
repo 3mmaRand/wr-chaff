@@ -1,8 +1,8 @@
 {
-  "hash": "42f219b679b197c8b592b5d32c1575ab",
+  "hash": "f75c7f3855de22ebb19c78d81b9f867e",
   "result": {
     "engine": "knitr",
-    "markdown": "---\ntitle: \"The difference in mass between subspecies of common chaffinch.\"\nauthor: \"Emma Rand\"\nengine: knitr\nformat:\n  html\nexecute:\n  echo: false\n  include: true\n  error: false\n  message: false\n  warning: false\n---\n\n\n## Quarto\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n::: {.cell}\n::: {.cell-output-display}\n![](wr-chaff_files/figure-html/unnamed-chunk-2-1.png){width=672}\n:::\n:::",
+    "markdown": "---\ntitle: \"The difference in mass between subspecies of common chaffinch.\"\nauthor: \"Emma Rand\"\nengine: knitr\nformat:\n  html\nexecute:\n  echo: false\n  include: true\n  error: false\n  message: false\n  warning: false\n---\n\n\n# Introduction\n\n\n# Methods\n\n\n# Results\n\n\n# Discussion\n\n\n# References\n\n",
     "supporting": [
       "wr-chaff_files"
     ],
