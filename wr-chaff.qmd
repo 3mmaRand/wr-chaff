@@ -50,6 +50,20 @@ chaff_summary <- chaff |>
 ```
 
 
+```{r}
+#| label: extract-summary
+# extract values for inline reporting
+
+# sample sizes
+n_coelebs <- chaff_summary |> 
+  filter(subspecies == "coelebs") |> 
+  pull(n)
+
+n_canariensis <- chaff_summary |> 
+  filter(subspecies == "canariensis") |> 
+  pull(n)
+
+```
 
 
 We randomly sampled 20 *F. c. coelebs* males and
