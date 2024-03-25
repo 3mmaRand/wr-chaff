@@ -12,11 +12,18 @@ execute:
   warning: false
 ---
 
+
+
+
+
 # Introduction
 
 
 # Methods
-
+```{r}
+#| label: load-packages
+library(tidyverse)
+```
 
 # Results
 
@@ -26,3 +33,4 @@ execute:
 
 # References
 
+,
