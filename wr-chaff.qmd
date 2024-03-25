@@ -39,7 +39,15 @@ file <- "data-raw/chaff.txt"
 chaff <- read_table(file)
 ```
 
-
+```{r}
+#| label: data-summary
+chaff_summary <- chaff |> 
+  group_by(subspecies) |>  
+  summarise(mean = mean(mass, na.rm = TRUE),
+            sd = sd(mass, na.rm = TRUE),
+            n = length(mass),
+            se = sd / sqrt(n))
+```
 
 
 # Results
