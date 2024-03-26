@@ -106,6 +106,7 @@ mean mass of `r n_coelebs` randomly sampled males from each subspecies was deter
 :::
 
 
+::: {#fig-histograms layout-ncol=2}
 
 ```{r}
 #| label: fig-hist-canariensis
@@ -128,6 +129,7 @@ chaff |>
 
 ```
 
+:::
 
 # Discussion
 
