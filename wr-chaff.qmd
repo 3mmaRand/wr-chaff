@@ -13,7 +13,9 @@ execute:
 ---
 
 
-
+```{r}
+options(digits = 2)
+```
 
 
 # Introduction
@@ -143,8 +145,7 @@ a table.
 ```{r}
 #| label: tbl-chaff
 chaff_summary |> 
-  knitr::kable(caption = "Summary of mass(g) for the two subspecies of chaffinch.",
-               digits = 2)
+  knitr::kable(caption = "Summary of mass(g) for the two subspecies of chaffinch.")
 
 ```
 
