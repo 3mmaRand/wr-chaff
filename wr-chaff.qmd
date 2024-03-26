@@ -105,6 +105,30 @@ mean mass of `r n_coelebs` randomly sampled males from each subspecies was deter
 
 :::
 
+
+
+```{r}
+#| label: fig-hist-canariensis
+chaff |> 
+  filter(subspecies == "canariensis") |>
+  ggplot(aes(x = mass)) +
+  geom_histogram(bins = 8) +
+  theme_minimal()
+
+```
+
+
+```{r}
+#| label: fig-hist-coelebs
+chaff |> 
+  filter(subspecies == "coelebs") |>
+  ggplot(aes(x = mass)) +
+  geom_histogram(bins = 8) +
+  theme_minimal()
+
+```
+
+
 # Discussion
 
 
