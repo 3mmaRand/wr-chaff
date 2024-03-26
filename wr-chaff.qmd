@@ -73,6 +73,9 @@ spring scales.  Analysis was carried out with R and tidyverse packages.
 
 # Results
 
+Canariensis have higher mass than coelebs. See @fig-chaff
+
+
 ```{r}
 #| label: fig-chaff
 ggplot() +
