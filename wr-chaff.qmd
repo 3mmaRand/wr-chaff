@@ -79,6 +79,9 @@ Canariensis have higher mass than coelebs. See @fig-chaff
 
 
 ```{r}
+#| fig-width: 3.5
+#| fig-height: 3.5
+#| fig-align: left
 ggplot() +
   geom_point(data = chaff, aes(x = subspecies, y = mass),
              position = position_jitter(width = 0.1, height = 0),
