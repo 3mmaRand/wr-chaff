@@ -66,9 +66,9 @@ n_canariensis <- chaff_summary |>
 ```
 
 
-We randomly sampled 20 *F. c. coelebs* males and
-20 *F. c. palmae* males and determined their mass with
-spring scales. Analysis was carried out with R and tidyverse packages.
+We randomly sampled `r n_coelebs` *F. c. coelebs* males and
+`r n_canariensis` *F. c. palmae* males and determined their mass with
+spring scales.  Analysis was carried out with R and tidyverse packages.
 
 
 # Results
