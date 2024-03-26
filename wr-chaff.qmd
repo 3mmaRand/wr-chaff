@@ -10,26 +10,24 @@ execute:
   error: false
   message: false
   warning: false
+bibliography: references.bib
 ---
-
 
 ```{r}
 options(digits = 2)
 ```
 
-
 # Introduction
 
-A number of subspecies of the [common chaffinch]( https://en.wikipedia.org/wiki/Common_chaffinch), 
-*Fringilla coelebs*, have been described based principally on 
-the differences in the pattern and colour of the adult male plumage. 
-Two of groups of these subspecies are the "coelebs group" that occurs 
-in Europe and Asia and the "canariensis group" that occurs on
-the Canary Islands. 
-
-
+A number of subspecies of the [common
+chaffinch](https://en.wikipedia.org/wiki/Common_chaffinch), *Fringilla
+coelebs*, have been described based principally on the differences in
+the pattern and colour of the adult male plumage. Two of groups of these
+subspecies are the "coelebs group" that occurs in Europe and Asia and
+the "canariensis group" that occurs on the Canary Islands.
 
 # Methods
+
 ```{r}
 #| label: load-packages
 library(tidyverse)
@@ -51,7 +49,6 @@ chaff_summary <- chaff |>
             se = sd / sqrt(n))
 ```
 
-
 ```{r}
 #| label: extract-summary
 # extract values for inline reporting
@@ -67,19 +64,16 @@ n_canariensis <- chaff_summary |>
 
 ```
 
-
 We randomly sampled `r n_coelebs` *F. c. coelebs* males and
 `r n_canariensis` *F. c. palmae* males and determined their mass with
-spring scales.  Analysis was carried out with R and tidyverse packages.
-
+spring scales. Analysis was carried out with R and tidyverse packages
+[@tidyverse]
 
 # Results
 
 Canariensis have higher mass than coelebs. See @fig-chaff
 
 ::: {#fig-chaff}
-
-
 ```{r}
 #| fig-width: 3.5
 #| fig-height: 3.5
@@ -103,16 +97,15 @@ ggplot() +
 ```
 
 **Canariensis chaffinches are heavier than Coelebs chaffinches**. The
-mean mass of `r n_coelebs` randomly sampled males from each subspecies was determined. Error bars are $\pm$ 1 standard error
-
+mean mass of `r n_coelebs` randomly sampled males from each subspecies
+was determined. Error bars are $\pm$ 1 standard error
 :::
 
+The distribution mass can be can been seen in @fig-histograms for
+Canariensis in @fig-hist-canariensis and for Coelebs in
+@fig-hist-coelebs.
 
-The distribution mass can be can been seen in @fig-histograms for Canariensis in @fig-hist-canariensis and for Coelebs in @fig-hist-coelebs.
-
-
-::: {#fig-histograms layout-ncol=2}
-
+::: {#fig-histograms layout-ncol="2"}
 ```{r}
 #| label: fig-hist-canariensis
 chaff |> 
@@ -122,7 +115,6 @@ chaff |>
   theme_minimal()
 
 ```
-
 
 ```{r}
 #| label: fig-hist-coelebs
@@ -134,9 +126,9 @@ chaff |>
 
 ```
 
-**Distribution of mass for *F. c. canariensis* and *F. c. coelebs***. The
-mean mass of `r n_coelebs` randomly sampled males from each subspecies was determined.
-
+**Distribution of mass for *F. c. canariensis* and *F. c. coelebs***.
+The mean mass of `r n_coelebs` randomly sampled males from each
+subspecies was determined.
 :::
 
 These results are gratuitously reproduced in @tbl-chaff just to include
@@ -150,9 +142,6 @@ chaff_summary |>
 
 ```
 
-
 # Discussion
 
-
 # References
-
