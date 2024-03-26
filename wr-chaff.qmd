@@ -75,10 +75,10 @@ spring scales.  Analysis was carried out with R and tidyverse packages.
 
 Canariensis have higher mass than coelebs. See @fig-chaff
 
+::: {#fig-chaff}
+
 
 ```{r}
-#| label: fig-chaff
-#| fig-cap: "Mass of chaffinches."
 ggplot() +
   geom_point(data = chaff, aes(x = subspecies, y = mass),
              position = position_jitter(width = 0.1, height = 0),
@@ -97,8 +97,10 @@ ggplot() +
   theme_classic()
 ```
 
+**Canariensis chaffinches are heavier than Coelebs chaffinches**. The
+mean mass of `r n_coelebs` randomly sampled males from each subspecies was determined. Error bars are $\pm$ 1 standard error
 
-
+:::
 
 # Discussion
 
