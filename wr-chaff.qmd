@@ -135,8 +135,19 @@ chaff |>
 **Distribution of mass for *F. c. canariensis* and *F. c. coelebs***. The
 mean mass of `r n_coelebs` randomly sampled males from each subspecies was determined.
 
-
 :::
+
+These results are gratuitously reproduced in @tbl-chaff just to include
+a table.
+
+```{r}
+#| label: tbl-chaff
+chaff_summary |> 
+  knitr::kable(caption = "Summary of mass(g) for the two subspecies of chaffinch.",
+               digits = 2)
+
+```
+
 
 # Discussion
 
