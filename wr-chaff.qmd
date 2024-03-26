@@ -73,6 +73,28 @@ spring scales.  Analysis was carried out with R and tidyverse packages.
 
 # Results
 
+```{r}
+#| label: fig-chaff
+ggplot() +
+  geom_point(data = chaff, aes(x = subspecies, y = mass),
+             position = position_jitter(width = 0.1, height = 0),
+             colour = "gray50") +
+  geom_errorbar(data = chaff_summary, 
+                aes(x = subspecies, ymin = mean - se, ymax = mean + se),
+                width = 0.3) +
+  geom_errorbar(data = chaff_summary, 
+                aes(x = subspecies, ymin = mean, ymax = mean),
+                width = 0.2) +
+  scale_y_continuous(name = "Mass (g)", 
+                     limits = c(0, 30), 
+                     expand = c(0, 0)) +
+  scale_x_discrete(name = "Subspecies", 
+                   labels = c("Canariensis", "Coelebs")) +
+  theme_classic()
+```
+
+
+
 
 # Discussion
 
