@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.551">
+<meta name="generator" content="quarto-1.5.57">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -55,7 +55,7 @@ div.csl-indent {
 <link href="wr-chaff_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="wr-chaff_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
@@ -120,41 +120,76 @@ window.Quarto = {
 
 <section id="introduction" class="level1">
 <h1>Introduction</h1>
-<p>A number of subspecies of the <a href="https://en.wikipedia.org/wiki/Common_chaffinch">common chaffinch</a>, <em>Fringilla coelebs</em>, have been described based principally on the differences in the pattern and colour of the adult male plumage <span class="citation" data-cites="suárez2009">(<a href="#ref-suárez2009" role="doc-biblioref">Suárez et al. 2009</a>)</span>. Two of groups of these subspecies are the “coelebs group” that occurs in Europe and Asia and the “canariensis group” that occurs on the Canary Islands.</p>
+<p>A number of subspecies of the <a href="https://en.wikipedia.org/wiki/Common_chaffinch">common chaffinch</a>, <em>Fringilla coelebs</em>, have been described based principally on the differences in the pattern and colour of the adult male plumage <span class="citation" data-cites="suárez2009">(<a href="#ref-suárez2009" role="doc-biblioref">Suárez et al. 2009</a>)</span>. Two of groups of these subspecies are the “coelebs group” (<a href="#fig-coelebs" class="quarto-xref">Figure&nbsp;1 (a)</a>) that occurs in Europe and Asia and the “canariensis group” (<a href="#fig-canariensis" class="quarto-xref">Figure&nbsp;1 (b)</a>) that occurs on the Canary Islands.</p>
+<div id="fig-subspecies" class="quarto-layout-panel">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-subspecies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-subspecies" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-coelebs" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-coelebs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/coelebs.jpg" class="img-fluid figure-img" data-ref-parent="fig-subspecies">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-coelebs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(a) <em>F. c. coelebs</em>
+</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-subspecies" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div id="fig-canariensis" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-subfloat-fig figure">
+<div aria-describedby="fig-canariensis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/canariensis.jpg" class="img-fluid figure-img" data-ref-parent="fig-subspecies">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-canariensis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+(b) <em>F. c. palmae</em>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-subspecies-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: <strong>Adult male <em>Fringilla coelebs</em></strong>. Coelebs group on the left (Andreas Trepte, CC BY-SA 2.5 <a href="https://creativecommons.org/licenses/by-sa/2.5" class="uri">https://creativecommons.org/licenses/by-sa/2.5</a>, via Wikimedia Commons) and canariensis group on the right (H. Zell, CC BY-SA 3.0 <a href="https://creativecommons.org/licenses/by-sa/3.0" class="uri">https://creativecommons.org/licenses/by-sa/3.0</a>, via Wikimedia Commons).
+</figcaption>
+</figure>
+</div>
 </section>
 <section id="methods" class="level1">
 <h1>Methods</h1>
-<p>We randomly sampled 20 <em>F. c.&nbsp;coelebs</em> males and 20 <em>F. c.&nbsp;palmae</em> males and determined their mass with spring scales. Analysis was carried out with R <span class="citation" data-cites="r-core">(<a href="#ref-r-core" role="doc-biblioref">R Core Team 2023</a>)</span> and tidyverse packages <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span></p>
+<p>We randomly sampled 20 <em>F. c.&nbsp;coelebs</em> males and 20 <em>F. c.&nbsp;palmae</em> males and determined their mass with spring scales. Analysis was carried out with R <span class="citation" data-cites="r-core">(<a href="#ref-r-core" role="doc-biblioref">R Core Team 2025</a>)</span> and tidyverse packages <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span> and the manuscript was prepared with Quarto <span class="citation" data-cites="Allaire_Quarto_2024">(<a href="#ref-Allaire_Quarto_2024" role="doc-biblioref">Allaire et al. 2024</a>)</span>.</p>
 </section>
 <section id="results" class="level1">
 <h1>Results</h1>
-<p>Canariensis have higher mass than coelebs. See <a href="#fig-chaff" class="quarto-xref">Figure&nbsp;1</a></p>
-<div id="fig-chaff" class="quarto-figure quarto-figure-left quarto-float anchored">
+<p>Canariensis have higher mass than coelebs. See <a href="#fig-chaff" class="quarto-xref">Figure&nbsp;2</a>.</p>
+<div id="fig-chaff" class="quarto-float quarto-figure quarto-figure-left anchored">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-chaff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell" data-layout-align="left">
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-left">
 <figure class="figure">
-<p><img src="wr-chaff_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="336"></p>
+<p><img src="wr-chaff_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid quarto-figure quarto-figure-left figure-img" width="288"></p>
 </figure>
 </div>
 </div>
 </div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-chaff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: <strong>Canariensis chaffinches are heavier than Coelebs chaffinches</strong>. The mean mass of 20 randomly sampled males from each subspecies was determined. Error bars are <span class="math inline">\(\pm\)</span> 1 standard error
+Figure&nbsp;2: <strong>Canariensis chaffinches are heavier than Coelebs chaffinches</strong>. The mean mass of 20 randomly sampled males from each subspecies was determined. Error bars means are <span class="math inline">\(\pm\)</span> 1 standard error. Data analysis was conducted in R <span class="citation" data-cites="r-core">(<a href="#ref-r-core" role="doc-biblioref">R Core Team 2025</a>)</span> with tidyverse <span class="citation" data-cites="tidyverse">(<a href="#ref-tidyverse" role="doc-biblioref">Wickham et al. 2019</a>)</span> packages .
 </figcaption>
 </figure>
 </div>
-<p>The distribution mass can be can been seen in <a href="#fig-histograms" class="quarto-xref">Figure&nbsp;2</a> for Canariensis in <a href="#fig-hist-canariensis" class="quarto-xref">Figure&nbsp;2 (a)</a> and for Coelebs in <a href="#fig-hist-coelebs" class="quarto-xref">Figure&nbsp;2 (b)</a>.</p>
+<p>The distribution mass can be can been seen in <a href="#fig-histograms" class="quarto-xref">Figure&nbsp;3</a> for Canariensis in <a href="#fig-hist-canariensis" class="quarto-xref">Figure&nbsp;3 (a)</a> and for Coelebs in <a href="#fig-hist-coelebs" class="quarto-xref">Figure&nbsp;3 (b)</a>. We don’t really need more figures for this data but it allows you to see how to create multipanel figures.</p>
 <div id="fig-histograms" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-histograms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="quarto-layout-row">
 <div class="cell quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-histograms" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="cell-output-display quarto-layout-cell-subref" data-ref-parent="fig-histograms">
-<div id="fig-hist-canariensis" class="quarto-figure quarto-figure-center quarto-float anchored" width="672">
+<div id="fig-hist-canariensis" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-hist-canariensis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="wr-chaff_files/figure-html/fig-hist-canariensis-1.png" id="fig-hist-canariensis" class="img-fluid figure-img" data-ref-parent="fig-histograms" width="672">
@@ -168,7 +203,7 @@ Figure&nbsp;1: <strong>Canariensis chaffinches are heavier than Coelebs chaffinc
 </div>
 <div class="cell quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-histograms" style="flex-basis: 50.0%;justify-content: flex-start;">
 <div class="cell-output-display quarto-layout-cell-subref" data-ref-parent="fig-histograms">
-<div id="fig-hist-coelebs" class="quarto-figure quarto-figure-center quarto-float anchored" width="672">
+<div id="fig-hist-coelebs" class="quarto-float quarto-figure quarto-figure-center anchored" width="672">
 <figure class="quarto-float quarto-subfloat-fig figure">
 <div aria-describedby="fig-hist-coelebs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <img src="wr-chaff_files/figure-html/fig-hist-coelebs-1.png" id="fig-hist-coelebs" class="img-fluid figure-img" data-ref-parent="fig-histograms" width="672">
@@ -181,48 +216,22 @@ Figure&nbsp;1: <strong>Canariensis chaffinches are heavier than Coelebs chaffinc
 </div>
 </div>
 </div>
-<div class="quarto-layout-row">
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-histograms" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-canariensis" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-canariensis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/canariensis.jpg" class="img-fluid figure-img" data-ref-parent="fig-histograms">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-canariensis-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(c) <em>F. c. palmae</em>
-</figcaption>
-</figure>
-</div>
-</div>
-<div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-histograms" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-coelebs" class="quarto-figure quarto-figure-center quarto-float anchored">
-<figure class="quarto-float quarto-subfloat-fig figure">
-<div aria-describedby="fig-coelebs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="images/coelebs.jpg" class="img-fluid figure-img" data-ref-parent="fig-histograms">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-coelebs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-(d) <em>F. c. coelebs</em>
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-histograms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;2: <strong>Distribution of mass for <em>F. c.&nbsp;canariensis</em> (<a href="#fig-hist-canariensis" class="quarto-xref">Figure&nbsp;2 (a)</a> and <a href="#fig-canariensis" class="quarto-xref">Figure&nbsp;2 (c)</a>) and <em>F. c.&nbsp;coelebs</em> (<a href="#fig-hist-coelebs" class="quarto-xref">Figure&nbsp;2 (b)</a> and <a href="#fig-coelebs" class="quarto-xref">Figure&nbsp;2 (d)</a>).</strong> The mean mass of 20 randomly sampled males from each subspecies was determined.
+Figure&nbsp;3: <strong>Distribution of mass for two subspecies of chaffinch.</strong> <a href="#fig-hist-canariensis" class="quarto-xref">Figure&nbsp;3 (a)</a>, <em>F. c.&nbsp;canariensis</em> and, <a href="#fig-hist-coelebs" class="quarto-xref">Figure&nbsp;3 (b)</a>, <em>F. c.&nbsp;coelebs</em>. The mean mass of 20 randomly sampled males from each subspecies was determined.
 </figcaption>
 </figure>
 </div>
-<p>These results are gratuitously reproduced in <a href="#tbl-chaff" class="quarto-xref">Table&nbsp;1</a> just to include a table.</p>
+<p>A summary of the results are gratuitously reproduced in <a href="#tbl-chaff" class="quarto-xref">Table&nbsp;1</a> just to include a table.</p>
 <div class="cell">
-<div id="tbl-chaff" class="cell quarto-float anchored">
+<div id="tbl-chaff" class="cell quarto-float quarto-figure quarto-figure-center anchored">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-chaff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Table&nbsp;1: Summary of mass(g) for the two subspecies of chaffinch.
 </figcaption>
 <div aria-describedby="tbl-chaff-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output-display">
-<table class="do-not-create-environment cell table table-sm table-striped small">
+<table class="do-not-create-environment cell caption-top table table-sm table-striped small">
 <thead>
 <tr class="header">
 <th style="text-align: left;">Subspecies</th>
@@ -257,6 +266,7 @@ Table&nbsp;1: Summary of mass(g) for the two subspecies of chaffinch.
 </section>
 <section id="discussion" class="level1">
 <h1>Discussion</h1>
+<p>yadda yadda</p>
 </section>
 <section id="references" class="level1 unnumbered">
 
@@ -264,8 +274,11 @@ Table&nbsp;1: Summary of mass(g) for the two subspecies of chaffinch.
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-Allaire_Quarto_2024" class="csl-entry" role="listitem">
+Allaire, J. J., Charles Teague, Carlos Scheidegger, Yihui Xie, Christophe Dervieux, and Gordon Woodhull. 2024. <span>“<span>Quarto</span>.”</span> <a href="https://doi.org/10.5281/zenodo.5960048">https://doi.org/10.5281/zenodo.5960048</a>.
+</div>
 <div id="ref-r-core" class="csl-entry" role="listitem">
-R Core Team. 2023. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+R Core Team. 2025. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
 </div>
 <div id="ref-suárez2009" class="csl-entry" role="listitem">
 Suárez, Nicolás M., Eva Betancor, Tilman E. Klassert, Teresa Almeida, Mariano Hernández, and José J. Pestano. 2009. <span>“Phylogeography and Genetic Structure of the Canarian Common Chaffinch (Fringilla Coelebs) Inferred with mtDNA and Microsatellite Loci.”</span> <em>Molecular Phylogenetics and Evolution</em> 53 (2): 556–64. <a href="https://doi.org/10.1016/j.ympev.2009.07.018">https://doi.org/10.1016/j.ympev.2009.07.018</a>.
@@ -310,18 +323,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    text: function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-    }
-  });
-  clipboard.on('success', function(e) {
+  const onCopySuccess = function(e) {
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -353,7 +355,29 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
   });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -361,7 +385,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {

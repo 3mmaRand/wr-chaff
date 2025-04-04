@@ -2,8 +2,17 @@
 title: "The difference in mass between subspecies of common chaffinch."
 author: "Emma Rand"
 engine: knitr
+# format:
+#   html
 format:
-  html
+  pdf:
+    documentclass: article
+    papersize: A4
+    mainfont: Calibri
+    geometry:
+      - top=20mm
+      - left=25mm
+      - right=25mm
 execute:
   echo: false
   include: true
@@ -23,8 +32,22 @@ A number of subspecies of the [common
 chaffinch](https://en.wikipedia.org/wiki/Common_chaffinch), *Fringilla
 coelebs*, have been described based principally on the differences in
 the pattern and colour of the adult male plumage [@suárez2009]. Two of
-groups of these subspecies are the "coelebs group" that occurs in Europe
-and Asia and the "canariensis group" that occurs on the Canary Islands.
+groups of these subspecies are the "coelebs group" (@fig-coelebs) that
+occurs in Europe and Asia and the "canariensis group" (@fig-canariensis) that occurs on the Canary Islands.
+
+::: {#fig-subspecies layout-ncol="2"}
+![*F. c.
+coelebs*](images/coelebs.jpg){#fig-coelebs}
+
+![*F. c.
+palmae*](images/canariensis.jpg){#fig-canariensis}
+
+**Adult male *Fringilla coelebs***. Coelebs group on the left (Andreas
+Trepte, CC BY-SA 2.5 <https://creativecommons.org/licenses/by-sa/2.5>,
+via Wikimedia Commons) and canariensis group on the right (H.
+Zell, CC BY-SA 3.0 <https://creativecommons.org/licenses/by-sa/3.0>, via
+Wikimedia Commons).
+:::
 
 # Methods
 
@@ -67,16 +90,17 @@ n_canariensis <- chaff_summary |>
 We randomly sampled `r n_coelebs` *F. c. coelebs* males and
 `r n_canariensis` *F. c. palmae* males and determined their mass with
 spring scales. Analysis was carried out with R [@r-core] and tidyverse
-packages [@tidyverse]
+packages [@tidyverse] and the manuscript was prepared with Quarto
+[@Allaire_Quarto_2024].
 
 # Results
 
-Canariensis have higher mass than coelebs. See @fig-chaff
+Canariensis have higher mass than coelebs. See @fig-chaff.
 
 ::: {#fig-chaff}
 ```{r}
-#| fig-width: 3.5
-#| fig-height: 3.5
+#| fig-width: 3
+#| fig-height: 3
 #| fig-align: left
 ggplot() +
   geom_point(data = chaff, aes(x = subspecies, y = mass),
@@ -98,12 +122,15 @@ ggplot() +
 
 **Canariensis chaffinches are heavier than Coelebs chaffinches**. The
 mean mass of `r n_coelebs` randomly sampled males from each subspecies
-was determined. Error bars are $\pm$ 1 standard error
+was determined. Error bars means are $\pm$ 1 standard error. Data 
+analysis was conducted in R [@r-core] with tidyverse [@tidyverse] 
+packages .
 :::
 
 The distribution mass can be can been seen in @fig-histograms for
 Canariensis in @fig-hist-canariensis and for Coelebs in
-@fig-hist-coelebs.
+@fig-hist-coelebs. We don't really need more figures for this data
+but it allows you to see how to create multipanel figures.
 
 ::: {#fig-histograms layout-ncol="2"}
 ```{r}
@@ -112,7 +139,11 @@ chaff |>
   filter(subspecies == "canariensis") |>
   ggplot(aes(x = mass)) +
   geom_histogram(bins = 8) +
-  theme_minimal()
+  scale_x_continuous(name = "Mass (g)", 
+                     expand = c(0, 0)) +
+  scale_y_continuous(name = "Count", 
+                     expand = c(0, 0)) +
+  theme_classic()
 
 ```
 
@@ -122,25 +153,21 @@ chaff |>
   filter(subspecies == "coelebs") |>
   ggplot(aes(x = mass)) +
   geom_histogram(bins = 8) +
-  theme_minimal()
+  scale_x_continuous(name = "Mass (g)", 
+                     expand = c(0, 0)) +
+  scale_y_continuous(name = "Count", 
+                     expand = c(0, 0)) +
+  theme_classic()
 
 ```
 
-![*F. c.
-palmae*](images/canariensis.jpg){#fig-canariensis}
 
-![*F. c.
-coelebs*](images/coelebs.jpg){#fig-coelebs}
-
-
-
-**Distribution of mass for *F. c. canariensis* (@fig-hist-canariensis and @fig-canariensis) and *F. c. coelebs* (@fig-hist-coelebs and @fig-coelebs).**
-The mean mass of `r n_coelebs` randomly sampled males from each
-subspecies was determined.
+**Distribution of mass for two subspecies of chaffinch.** @fig-hist-canariensis, *F. c. canariensis* 
+ and, @fig-hist-coelebs, *F. c. coelebs*.  The mean mass of `r n_coelebs` randomly sampled males from each subspecies was determined.
 :::
 
-These results are gratuitously reproduced in @tbl-chaff just to include
-a table.
+A summary of the results are gratuitously reproduced in @tbl-chaff just 
+to include a table.
 
 ```{r}
 #| label: tbl-chaff
@@ -151,5 +178,7 @@ chaff_summary |>
 ```
 
 # Discussion
+
+yadda yadda
 
 # References
